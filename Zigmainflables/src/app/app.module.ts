@@ -27,17 +27,20 @@ import { TiendaComponent } from './componentes/tienda/tienda.component';
 
 const routes: Routes=[
    
-    { path: 'tienda', component: TiendaComponent},
+    
     { path: 'registro', component: RegistroComponent},
     { path: 'login', component: LoginComponent},
     { path: 'inicio', component: InicioComponent},
     { path: 'nosotros', component: NosotrosComponent},
+    { path: 'tienda', component: TiendaComponent},
+    
     { path: '', component: InicioComponent , pathMatch:'full'},
     { path: '**', redirectTo:'/', pathMatch:'full'}
 ];
  
 @NgModule({
 declarations: [
+
 AppComponent,
 FooterComponent,
 NavComponent,

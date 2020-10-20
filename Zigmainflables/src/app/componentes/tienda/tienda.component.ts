@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConexionService } from '../../services/conexion.service';
 
 @Component({
   selector: 'app-tienda',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TiendaComponent implements OnInit {
 
-  constructor() { }
+  productos:any;
+
+  constructor(private conexion:ConexionService) { 
+
+   this.conexion.listaProductos().subscribe(producto=>{
+       this.productos = producto;
+       console.log(this.productos);
+    })
+  }
 
   ngOnInit(): void {
   }
 
 }
+
