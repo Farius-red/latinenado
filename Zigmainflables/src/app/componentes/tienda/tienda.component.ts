@@ -8,14 +8,14 @@ import { ConexionService } from '../../services/conexion.service';
 })
 export class TiendaComponent implements OnInit {
 
-  productos:any;
+  productos: any;
 
-  constructor(private conexion:ConexionService) { 
+  constructor(private conexion: ConexionService) {
 
-   this.conexion.listaProductos().subscribe(producto=>{
+   this.conexion.listaProductos().subscribe(producto => {
        this.productos = producto;
        console.log(this.productos);
-    })
+    });
   }
 
   ngOnInit(): void {

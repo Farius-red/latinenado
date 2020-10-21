@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import{AngularFirestore} from 'angularfire2/firestore';
+import {AngularFirestore} from 'angularfire2/firestore';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -8,9 +8,9 @@ templateUrl: './app.component.html',
 styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title= "zigmainflables";
+  title = 'zigmainflables';
 usuarios: Observable<any[]>;
-constructor(db:AngularFirestore){
+constructor(db: AngularFirestore){
 this.usuarios = db.collection('usuarios').valueChanges();
 }
 }

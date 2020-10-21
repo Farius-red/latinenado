@@ -57,4 +57,8 @@ export class ConexionService {
   listaProductos(){
     return this.productos;
   }
+
+  agregarProductos(producto: Producto){
+    this.productosCollection.add(producto);
+  }
 }
