@@ -22,15 +22,24 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { NavComponent } from './componentes/nav/nav.component';
 import { LoginComponent } from './componentes/login/login.component';
+
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { NosotrosComponent } from './componentes/nosotros/nosotros.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
+
 import { TiendaComponent } from './componentes/tienda/tienda.component';
 import { FormulariosComponent } from './componentes/formularios/formularios/formularios.component';
+import { HeadermodulosComponent } from './componentes/nav/headermodulos/headermodulos.component';
+
+import { MenulateralmodulosComponent } from './componentes/menulateralmodulos/menulateralmodulos.component';
+
 
 import {UsuariosComponent} from './modulos/usuarios/usuarios.component';
 import { VentasComponent } from './modulos/ventas/ventas.component';
 import { EmpleadosComponent } from './modulos/usuarios/empleados/empleados.component';
+import { TemplatemodulosComponent } from './modulos/templatemodulos/templatemodulos.component';
+import { ContenidoModulosComponent } from './componentes/contenido-modulos/contenido-modulos.component';
+
 
 
 
@@ -51,19 +60,25 @@ const routes: Routes = [
 @NgModule({
 declarations: [
 
-
 AppComponent,
 FooterComponent,
 NavComponent,
 LoginComponent,
+
 RegistroComponent,
 NosotrosComponent,
 InicioComponent,
 TiendaComponent,
+
 FormulariosComponent,
 UsuariosComponent,
 VentasComponent,
 EmpleadosComponent,
+
+HeadermodulosComponent,
+TemplatemodulosComponent,
+MenulateralmodulosComponent,
+ContenidoModulosComponent,
 ],
 
 imports: [
