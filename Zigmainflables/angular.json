@@ -40,12 +40,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/css/styles.css",
-
-              "src/css/creative.css",
-
-
-              "src/css/adminlte.css"
+              "src/css/styles.css"
             ],
             "scripts": []
           },
@@ -109,7 +104,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/css/styles.css"
             ],
             "scripts": []
           }

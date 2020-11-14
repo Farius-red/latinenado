@@ -1,3 +1,4 @@
+<app-nav></app-nav>
 <div class="container">
 
     <div class="row">
@@ -50,7 +51,7 @@
               <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">{{producto.NombreProducto}}</a>
+                  {{producto.NombreProducto}}
                 </h4>
                 <h5>{{producto.precio}}</h5>
                 <p class="card-text">{{producto.Descripcion}}</p>
@@ -62,7 +63,7 @@
             </div>
           </div>
 
-          
+
 
         </div>
         <!-- /.row -->
@@ -74,3 +75,4 @@
     <!-- /.row -->
 
   </div>
+  <app-footer></app-footer>

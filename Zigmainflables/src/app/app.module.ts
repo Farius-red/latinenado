@@ -17,45 +17,31 @@ import {AngularFireAuthModule} from 'angularfire2/auth';
 
 import {ConexionService} from './services/conexion.service';
 
-   // Componentes
+   // Componentesview/
 import { AppComponent } from './app.component';
-import { FooterComponent } from './componentes/footer/footer.component';
-import { NavComponent } from './componentes/nav/nav.component';
-import { LoginComponent } from './componentes/login/login.component';
+import { FooterComponent } from './view/componentes/footer/footer.component';
+import { NavComponent } from './view/componentes/nav/nav.component';
+import { LoginComponent } from './view/componentes/login/login.component';
 
-import { RegistroComponent } from './componentes/registro/registro.component';
-import { NosotrosComponent } from './componentes/nosotros/nosotros.component';
-import { InicioComponent } from './componentes/inicio/inicio.component';
+import { RegistroComponent } from './view/componentes/registro/registro.component';
+import { NosotrosComponent } from './view/componentes/nosotros/nosotros.component';
+import { InicioComponent } from './view/componentes/inicio/inicio.component';
 
-import { TiendaComponent } from './componentes/tienda/tienda.component';
-import { FormulariosComponent } from './componentes/formularios/formularios/formularios.component';
-import { HeadermodulosComponent } from './componentes/nav/headermodulos/headermodulos.component';
+import { TiendaComponent } from './view/componentes/tienda/tienda.component';
+import { FormulariosComponent } from './view/componentes/formularios/formularios/formularios.component';
+import { HeadermodulosComponent } from './view/componentes/nav/headermodulos/headermodulos.component';
 
-import { MenulateralmodulosComponent } from './componentes/menulateralmodulos/menulateralmodulos.component';
-
-
-import {UsuariosComponent} from './modulos/usuarios/usuarios.component';
-import { VentasComponent } from './modulos/ventas/ventas.component';
-import { EmpleadosComponent } from './modulos/usuarios/empleados/empleados.component';
-import { TemplatemodulosComponent } from './modulos/templatemodulos/templatemodulos.component';
-import { ContenidoModulosComponent } from './componentes/contenido-modulos/contenido-modulos.component';
+import { MenulateralmodulosComponent } from './view/componentes/menulateralmodulos/menulateralmodulos.component';
 
 
+import {UsuariosComponent} from './view/modulos/usuarios/usuarios.component';
+import { VentasComponent } from './view/modulos/ventas/ventas.component';
+import { EmpleadosComponent } from './view/modulos/usuarios/empleados/empleados.component';
+import { TemplatemodulosComponent } from './view/modulos/templatemodulos/templatemodulos.component';
+import { ContenidoModulosComponent } from './view/componentes/contenido-modulos/contenido-modulos.component';
 
 
 
-const routes: Routes = [
-
-
-    { path: 'registro', component: RegistroComponent},
-    { path: 'login', component: LoginComponent},
-    { path: 'inicio', component: InicioComponent},
-    { path: 'nosotros', component: NosotrosComponent},
-    { path: 'tienda', component: TiendaComponent},
-
-    { path: '', component: InicioComponent , pathMatch: 'full'},
-    { path: '**', redirectTo: '/', pathMatch: 'full'}
-];
 
 @NgModule({
 declarations: [
@@ -82,7 +68,7 @@ ContenidoModulosComponent,
 ],
 
 imports: [
-RouterModule.forRoot(routes),
+
 BrowserModule,
 AppRoutingModule,
 AngularFireModule.initializeApp(environment.firebase),
