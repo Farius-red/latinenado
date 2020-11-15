@@ -67,6 +67,22 @@
 
         </div>
         <!-- /.row -->
+        <div class="col-lg4 col-md-6 mb-4" *ngFor="let productos of productosCostantes">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                {{productos.NombreProducto}}
+              </h4>
+              <h5>{{productos.precio}}</h5>
+              <p class="card-text">{{productos.Descripcion}}</p>
+              <p class="card-text">{{productos.medidas}}</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
 
       </div>
       <!-- /.col-lg-9 -->

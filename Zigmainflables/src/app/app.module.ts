@@ -29,16 +29,18 @@ import { InicioComponent } from './view/componentes/inicio/inicio.component';
 
 import { TiendaComponent } from './view/componentes/tienda/tienda.component';
 import { FormulariosComponent } from './view/componentes/formularios/formularios/formularios.component';
-import { HeadermodulosComponent } from './view/componentes/nav/headermodulos/headermodulos.component';
 
-import { MenulateralmodulosComponent } from './view/componentes/menulateralmodulos/menulateralmodulos.component';
-
-
+// Componentes modulos
+import { HeadermodulosComponent } from './view/modulos/headermodulos/headermodulos.component';
+import { MenulateralmodulosComponent } from './view/modulos/menulateralmodulos/menulateralmodulos.component';
 import {UsuariosComponent} from './view/modulos/usuarios/usuarios.component';
+
+// Componentes Modulos
 import { VentasComponent } from './view/modulos/ventas/ventas.component';
 import { EmpleadosComponent } from './view/modulos/usuarios/empleados/empleados.component';
 import { TemplatemodulosComponent } from './view/modulos/templatemodulos/templatemodulos.component';
-import { ContenidoModulosComponent } from './view/componentes/contenido-modulos/contenido-modulos.component';
+import { ContenidoModulosComponent } from './view/modulos/contenido-modulos/contenido-modulos.component';
+import { DetalleProductoComponent } from './view/componentes/tienda/detalleProductos/detalle-producto/detalle-producto.component';
 
 
 
@@ -65,6 +67,7 @@ HeadermodulosComponent,
 TemplatemodulosComponent,
 MenulateralmodulosComponent,
 ContenidoModulosComponent,
+DetalleProductoComponent,
 ],
 
 imports: [

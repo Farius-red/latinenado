@@ -6,6 +6,7 @@ import { InicioComponent } from './view/componentes/inicio/inicio.component';
 import { LoginComponent } from './view/componentes/login/login.component';
 import { NosotrosComponent } from './view/componentes/nosotros/nosotros.component';
 import { RegistroComponent } from './view/componentes/registro/registro.component';
+import { DetalleProductoComponent } from './view/componentes/tienda/detalleProductos/detalle-producto/detalle-producto.component';
 import { TiendaComponent } from './view/componentes/tienda/tienda.component';
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'inicio', component: InicioComponent},
   { path: 'nosotros', component: NosotrosComponent},
   { path: 'tienda', component: TiendaComponent},
+  { path: 'tienda/:id', component: DetalleProductoComponent},
 
   { path: '', component: InicioComponent , pathMatch: 'full'},
   { path: '**', redirectTo: '/', pathMatch: 'full'}
